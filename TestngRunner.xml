@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="sehhaty APIs">
+    <test name="Spl APIs">
+        <classes>
+            <class name="NationalAddressFromSPL.GetNationalAddress.GetNationalAddressStatusCode200Test"/>
+            <class name="NationalAddressFromSPL.GetNationalAddress.GetNationalAddressStatusCode400Test"/>
+            <class name="NationalAddressFromSPL.ConfirmNationalAddress.ConfirmNationalAddressStatusCode200Test"/>
+            <class name="NationalAddressFromSPL.ConfirmNationalAddress.ConfirmNationalAddressStatusCode400Test"/>
+
+        </classes>
+    </test>
+    <test name="Add city feature">
+        <classes>
+            <class name="AddCity.GetCityList.GetCityListStatusCode200Test"/>
+            <class name="AddCity.GetCityById.GetCityByValidIdStatusCode200Test"/>
+            <class name="AddCity.GetCityById.GetCityByInValidIdStatusCode400Test"/>
+            <class name="AddCity.GetCityByPoint.GetCityByPointInsideStatusCode200Test"/>
+            <class name="AddCity.GetCityByPoint.GetCityByPointOutsideStatusCode400Test"/>
+        </classes>
+    </test>
+    <test name="vital signs">
+        <classes>
+            <class name="Vital_Signs.GetVitalSigns.GetVitalSignsStatusCode200Test"/>
+            <class name="Vital_Signs.BloodPressure.AddNewBloodPressureReadingForHypertensiveStatusCode200Test"/>
+            <class name="Vital_Signs.BloodPressure.AddNewBloodPressureReadingForNonHypertensiveStatusCode200Test"/>
+            <class name="Vital_Signs.BloodPressure.AddNewBloodPressureReadingStatusCode400Test"/>
+            <class name="Vital_Signs.BloodGlucose.AddNewBloodGlucoseReadingForDiabeticStatusCode200Test"/>
+            <class name="Vital_Signs.BloodGlucose.AddNewBloodGlucoseReadingForNonDiabeticStatusCode200Test"/>
+            <class name="Vital_Signs.BMI.AddNewRecordBmiStatusCode200Test"/>
+        </classes>
+    </test>
+    <test name="prescriptions">
+        <classes>
+            <class name="HealthProfile.prescriptions.GetActivePrescriptionStatusCode200Test"/>
+            <class name="HealthProfile.prescriptions.GetInActivePrescriptionStatusCode200Test"/>
+        </classes>
+    </test>
+    <test name="Medication">
+        <classes>
+            <class name="HealthProfile.Medications.GetMedicationStatusCode200Test"/>
+            <class name="HealthProfile.Medications.GetCurrentPreviousStatusCode200Test"/>
+        </classes>
+    </test>
+    <test name="personal information">
+        <classes>
+            <class name="HealthProfile.PersonalInformation.GetPersonalInformationStatusCode200Test"/>
+            <class name="HealthProfile.PersonalInformation.PatchPersonalInformationTest"/>
+        </classes>
+    </test>
+    <test name="insurance approval">
+        <classes>
+            <class name="HealthProfile.InsuranceApproval.InsuranceApprovalStatusCode200Test"/>
+        </classes>
+    </test>
+    <test name="labs">
+        <classes>
+            <class name="HealthProfile.Labs.GetLabsStatusCode200Test"/>
+        </classes>
+    </test>
+    <test name="medicalReport">
+        <classes>
+            <class name="HealthProfile.MedicalReport.GetMedicalReportStatusCode200Test"/>
+        </classes>
+    </test>
+    <test name="procedures">
+        <classes>
+            <class name="HealthProfile.Procedures.GetOperationsStatus200Test"/>
+        </classes>
+    </test>
+    <test name="visits">
+        <classes>
+            <class name="HealthProfile.Visits.GetEmergencyStatusCode200Test"/>
+            <class name="HealthProfile.Visits.GetInPatientStatusCode200Test"/>
+            <class name="HealthProfile.Visits.GetOutPatientStatusCode200Test"/>
+        </classes>
+    </test>
+    <test name="SearchForDrug">
+        <classes>
+            <class name="SearchForDrug.ValidDrugNameTest"/>
+            <class name="SearchForDrug.InValidDrugNameTest"/>
+        </classes>
+    </test>
+    <test name="Dependent feature">
+        <classes>
+            <class name="Dependent.DependentListStatusCode200Test"/>
+            <class name="Dependent.DependentRequestListStatusCode200Test"/>
+            <class name="Dependent.DependentInformationStatusCode200Test"/>
+            <class name="Dependent.ValidDependentInformationStatusCode200Test"/>
+            <class name="Dependent.InvalidDependentInformationStatusCode200Test"/>
+            <!--<class name="Dependent.ApproveDependentRequestTest"/>-->
+
+        </classes>
+    </test>
+
+    <test name="Profile individuals">
+        <classes>
+            <class name="UserProfile.ProfileIndividualTest"/>
+            <class name="UserProfile.UpdateProfileTest"/>
+        </classes>
+    </test>
+    <test name="Asafny">
+        <classes>
+            <class name="Asafany.GetIncidentDetailsStatusCode200Test"/>
+            <class name="Asafany.GetIncidentTypeStatusCode200Test"/>
+            <class name="Asafany.InsertIncidentStatusCode201Test"/>
+            <class name="Asafany.GetUserIncidentStatusCode200Test"/>
+        </classes>
+    </test>
+    <!--test name="Mawid Feature">
+        <classes>
+            <class name="Mawid.Get_Nearby_Facilities"/>
+            <class name="Mawid.Get_nearby_facilities_point_outside_saudi_Arabia"/>
+            <class name="Mawid.MyAppointmentWithValidDateFromDateToTest"/>
+            <class name="Mawid.MyAppointmentWithInValidDateFromDateToTest"/>
+            <class name="Mawid.VerifyThatUserCanBookAppointment"/>
+        </classes>
+    </test>-->
+
+</suite>
