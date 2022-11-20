@@ -152,14 +152,11 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
-<<<<<<< HEAD
-=======
           <configuration>
             <suiteXmlFiles>
               <suiteXmlFile>TestngRunner</suiteXmlFile>
             </suiteXmlFiles>
           </configuration>
->>>>>>> 051ad16 (Initial commit)
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
