@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="sehhaty APIs">
-    <test name="Spl APIs">
+    <!--test name="Spl APIs">
         <classes>
             <class name="NationalAddressFromSPL.GetNationalAddress.GetNationalAddressStatusCode200Test"/>
             <class name="NationalAddressFromSPL.GetNationalAddress.GetNationalAddressStatusCode400Test"/>
@@ -9,7 +9,7 @@
             <class name="NationalAddressFromSPL.ConfirmNationalAddress.ConfirmNationalAddressStatusCode400Test"/>
 
         </classes>
-    </test>
+    </test>-->
     <test name="Add city feature">
         <classes>
             <class name="AddCity.GetCityList.GetCityListStatusCode200Test"/>
@@ -19,7 +19,7 @@
             <class name="AddCity.GetCityByPoint.GetCityByPointOutsideStatusCode400Test"/>
         </classes>
     </test>
-    <test name="vital signs">
+    <!--test name="vital signs">
         <classes>
             <class name="Vital_Signs.GetVitalSigns.GetVitalSignsStatusCode200Test"/>
             <class name="Vital_Signs.BloodPressure.AddNewBloodPressureReadingForHypertensiveStatusCode200Test"/>
@@ -74,21 +74,21 @@
             <class name="HealthProfile.Visits.GetInPatientStatusCode200Test"/>
             <class name="HealthProfile.Visits.GetOutPatientStatusCode200Test"/>
         </classes>
-    </test>
+    </test>-->
     <test name="SearchForDrug">
         <classes>
             <class name="SearchForDrug.ValidDrugNameTest"/>
             <class name="SearchForDrug.InValidDrugNameTest"/>
         </classes>
     </test>
-    <test name="Dependent feature">
+    <!--test name="Dependent feature">
         <classes>
             <class name="Dependent.DependentListStatusCode200Test"/>
             <class name="Dependent.DependentRequestListStatusCode200Test"/>
             <class name="Dependent.DependentInformationStatusCode200Test"/>
             <class name="Dependent.ValidDependentInformationStatusCode200Test"/>
             <class name="Dependent.InvalidDependentInformationStatusCode200Test"/>
-            <!--<class name="Dependent.ApproveDependentRequestTest"/>-->
+            <<class name="Dependent.ApproveDependentRequestTest"/>
 
         </classes>
     </test>
@@ -98,7 +98,7 @@
             <class name="UserProfile.ProfileIndividualTest"/>
             <class name="UserProfile.UpdateProfileTest"/>
         </classes>
-    </test>
+    </test>-->
     <test name="Asafny">
         <classes>
             <class name="Asafany.GetIncidentDetailsStatusCode200Test"/>
